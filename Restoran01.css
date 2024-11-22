@@ -1,0 +1,283 @@
+body{
+    background-color: rgb(0, 0, 0);
+    overflow:auto;
+    scrollbar-width: none;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(pic/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(10px);
+}
+.all{
+    z-index: 1;
+    min-width: 180px;
+    max-width: 4096px;
+    height: 100%;
+    border-radius: 25px;
+}
+.fixed{
+    top: 0;
+    left: 0;
+    display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    width: 100%;
+    height: 65px;
+    background-color: #b15733;
+    position: fixed;
+    overflow: hidden;
+}
+.main1{
+    display: grid;
+    grid-template-rows: repeat(8,4fr);
+    grid-template-columns: repeat(1, 2fr);
+    gap: 39px;
+    grid-template-areas: 
+    "ad1"
+    "ad1"
+    "ad1"
+    "ad1"
+    "ad1"
+    "ad1"
+    "ad1"   
+    "ad1";
+    min-width: 180px;
+    max-width: 4096px;
+    display: flex;
+        flex-direction: column;
+    width: 10%;
+    height: 204%;
+    background-color: #b87155;
+}
+.main2{
+    min-width: 180px;
+    max-width: 4096px;
+    display: grid;
+    grid-template-rows: 1fr 4fr 4fr 1fr 4fr 1fr 4fr 3fr 3fr 3fr;
+    grid-template-columns: repeat(4, 4fr);
+    gap: 14px;
+    grid-template-areas: 
+        "Dob1 Dob1 Dob1 Dob1"
+        "int1 int1 int2 int2"
+        "int3 int3 int4 int4"
+        "men1 men1 men1 men1"
+        "ops1 ops1 kit1 kit1"
+        "rew1 rew1 rew1 rew1"
+        "rew2 rew3 rew4 rew5"   
+        "map1 map1 map1 map1"
+        "kon1 kon1 kon1 kon1"
+        "kon2 kon2 kon2 kon2";
+    background-color: #b87155;
+    width: 80%;
+    height: 204%;
+}
+.ad{
+    grid-area: ad1;
+    width: 100%;
+    height: 100%;
+}
+.add01{
+    width: 100%;
+    height: 100%;
+}
+.dob{ 
+    grid-area: Dob1;
+    background-color: rgba(207, 113, 69, 0.877);
+    font-family: "lub";
+    font-size: 40px;
+    border: 5px double rgb(143, 53, 31);
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+.image1{
+    width: 100%;
+    height: 100%;
+}
+.image2{
+    width: 10%;
+    height: 100%;
+}
+.int01{
+    grid-area: int1;
+    width: 99%;
+    height: 98%;
+    border: 5px double black;
+}
+.int02{
+    grid-area: int2;
+    width: 99%;
+    height: 98%;
+    border: 5px double black;
+}
+.int03{
+    grid-area: int3;
+    width: 99%;
+    height: 98%;
+    border: 5px double black;
+}
+.int04{
+    grid-area: int4;
+    width: 99%;
+    height: 98%;
+    border: 5px double black;
+}
+.href2{
+    grid-area: men1;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-family: "lub";
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.opis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: ops1;
+    border: 3px double rgb(143, 53, 31);
+    font-family: "lub";
+    text-align: center;
+    font-size: 26px;
+}
+.kit{
+    grid-area: kit1;
+    width: 99%;
+    height: 98%;
+    border: 5px double black;
+}
+.rewiew{
+    text-align: center;
+    grid-area: rew1;
+    font-family: "lub";
+    font-size: 40px;
+}
+.rew2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: rew2;
+    text-align: center;
+    font-family: "lub";
+    font-size: 20px;
+    border: 3px double rgb(143, 53, 31);
+}
+.rew3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: rew3;
+    font-family: "lub";
+    font-size: 20px;
+    border: 3px double rgb(143, 53, 31);
+}
+.rew4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: rew4;
+    font-family: "lub";
+    font-size: 20px;
+    border: 3px double rgb(143, 53, 31);
+}
+.rew5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-area: rew5;
+    font-family: "lub";
+    font-size: 20px;
+    border: 3px double rgb(143, 53, 31);
+}
+.map01{
+    grid-area: map1;
+    width: 100%;
+    height: 250px;
+}
+.kon1{
+    border: 3px double rgb(143, 53, 31);
+    grid-area: kon1;
+    font-size: 25px;
+    font-family: "lub";
+}
+.kon2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-area: kon2;
+}
+
+.maining{
+    display: flex;
+        justify-content: center;
+    margin-top: 39px;
+    width: 100%;
+    height: 150%;
+}
+.ahref{
+    font-family: "lub";
+    font-size: 35px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 128ms ease;
+}
+.ahref:hover{
+    transform: scale(1.30);
+    transition: all 0.1s linear 0ms;
+}
+.ahref2{
+    padding: 10px 20px;
+    background-color: #b93704;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 5px double black;
+    font-size: 20px;
+}
+.ahref2:hover{
+    background-color: #882803;
+}
+    @font-face {
+        font-family: "lub";
+        src: url(pic/MonomakhUnicode.otf);
+    }
+    @font-face {
+        font-family: "lub2";
+        src: url(pic/Celestina.otf);
+    }
+.tx1{
+    text-align: center;
+    font-family: "lub";
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.tx2{
+    text-align: center;
+    font-family: "lub";
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+.map{
+    padding: 10px;
+}
+.img1{
+    margin: 40px 0px 0px 0px;
+    width: 10%;
+    height: 300%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.562);
+}
